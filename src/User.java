@@ -15,20 +15,24 @@ public class User {
     }
 
     public static void main(String[] args) {
-        User user1 = new User(32, 56, 177);
-        User user2 = new User(45, 50, 167);
-        User user3 = new User(34, 57, 157);
-        User user4 = new User(25, 90, 147);
-        User user5 = new User(63, 56, 169);
-        User user6 = new User(76, 45, 156);
-        User user7 = new User(34, 34, 178);
-        User user8 = new User(23, 78, 174);
-        User user9 = new User(12, 66, 170);
-        User user10 = new User(34, 65, 165);
 
-        int sumAge = user1.age+user2.age+user3.age+user4.age+user5.age+user6.age+user7.age+user8.age+user9.age+user10.age;
-        double sumWeight = user1.weight+user2.weight+user3.weight+user4.weight+user5.weight+user6.weight+user7.weight+user8.weight+user9.weight+user10.weight;
-        double sumHeight = user1.height+user2.height+user3.height+user4.height+user5.height+user6.height+user7.height+user8.height+user9.height+user10.height;
+        User [] users = new User[10];
+        users[0] = new User(32, 56, 177);
+        users[1] = new User(45, 50, 167);
+        users[2] = new User(34, 57, 157);
+        users[3] = new User(25, 90, 147);
+        users[4] = new User(63, 56, 169);
+        users[5] = new User(76, 45, 156);
+        users[6] = new User(34, 34, 178);
+        users[7] = new User(23, 78, 174);
+        users[8] = new User(12, 66, 170);
+        users[9] = new User(34, 65, 165);
+
+
+
+        int sumAge = users[0].age+users[1].age+users[2].age+users[3].age+users[4].age+users[5].age+users[6].age+users[7].age+users[8].age+users[9].age;
+        double sumWeight = users[0].weight+users[1].weight+users[2].weight+users[3].weight+users[4].weight+users[5].weight+users[6].weight+users[7].weight+users[8].weight+users[9].weight;
+        double sumHeight = users[0].height+users[1].height+users[2].height+users[3].height+users[4].height+users[5].height+users[6].height+users[7].height+users[8].height+users[9].height;
 
 
         System.out.println(sumAge);
