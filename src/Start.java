@@ -1,42 +1,38 @@
 
 public class Start {
 
-    public int int1;
-    public int int2;
-    public int int3;
-    public int int4;
-    public int int5;
-    public int int6;
-    public int int7;
-    public int int8;
-    public int int9;
-    public int int10;
+    public String word1;
+    public String word2;
+    public String word3;
+    public String word4;
+    public String word5;
+    public String word6;
+    public String word7;
+    public String word8;
+    public String word9;
+    public String word10;
 
-    public Start(int int1, int int2, int int3, int int4, int int5, int int6, int int7, int int8, int int9, int int10) {
-        this.int1 = int1;
-        this.int2 = int2;
-        this.int3 = int3;
-        this.int4 = int4;
-        this.int5 = int5;
-        this.int6 = int6;
-        this.int7 = int7;
-        this.int8 = int8;
-        this.int9 = int9;
-        this.int10 = int10;
+
+    public Start(String word1, String word2, String word3, String word4, String word5, String word6, String word7, String word8, String word9, String word10) {
+        this.word1 = word1;
+        this.word2 = word2;
+        this.word3 = word3;
+        this.word4 = word4;
+        this.word5 = word5;
+        this.word6 = word6;
+        this.word7 = word7;
+        this.word8 = word8;
+        this.word9 = word9;
+        this.word10 = word10;
     }
 
     public static void main(String[] args) {
 
-        Start start = new Start(1,2,3,4,5,6,7,8,9,10);
+        Start start = new Start("we", "have", "had", "the", "most", "informative", "java", "class", "today", "at 21");
 
-        int add = start.int1+ start.int2+start.int3+start.int4+start.int5+start.int6+start.int7+start.int8+start.int9+start.int10;
-        int min = start.int1-start.int2-start.int3-start.int4-start.int5-start.int6-start.int7-start.int8-start.int9-start.int10;
-        int mult = start.int1*start.int2*start.int3*start.int4*start.int5*start.int6*start.int7*start.int8*start.int9*start.int10;
-        int div = start.int1/start.int2/start.int3/start.int4/start.int5/start.int6/start.int7/start.int8/start.int9/start.int10;
+        String sentence = start.word1.concat(" ").concat(start.word2).concat(" ").concat(start.word3).concat(" ").concat(start.word4).concat(" ").concat(start.word5).concat(" ").concat(start.word6).concat(" ").concat(start.word7).concat(" ").concat(start.word8).concat(" ").concat(start.word9).concat(" ").concat(start.word10).concat(" ");
 
-        System.out.println(add);
-        System.out.println(min);
-        System.out.println(mult);
-        System.out.println(div);
+        System.out.println(sentence);
+
     }
 }
